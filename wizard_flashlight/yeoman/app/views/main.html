@@ -1,23 +1,18 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div header-directive></div>
+<div class="container">
+  <div class="height_80"></div>
+  <div class="container text-center color_brow">
+    <div class="wizard_fnf fn_s_40 padd_5">Are you a Wizard</div>
+    <div class="height_30"></div>
+    <form>
+      <div><input type="text" class="form-control" placeholder="username" ng-model="user.username"></div>
+      <div class="height_20"></div>
+      <div><input type="password" class="form-control" placeholder="password" ng-model="user.pass"></div>
+      <div class="height_20"></div>
+      <div class="wizard_fnf fn_s_25 padd_5" ng-click="login(user)">Login</div>
+    </form>
+    <div class="height_30"></div>
+    <div class="wizard_fnf fn_s_20 padd_5" ng-click="register()">Register Now. It's Free</div>
+    <div class="height_30"></div>
+  </div>
 </div>
